@@ -1,0 +1,1 @@
+docker pull privatebin/unit-fs:1.7.3 && docker tag privatebin/unit-fs:1.7.3 ${repository_url}:latest && aws ecr get-login-password --profile aws_bax --region ${aws_region} | docker login --username AWS --password-stdin ${account_id}.dkr.ecr.${aws_region}.amazonaws.com && docker push ${repository_url}:latest

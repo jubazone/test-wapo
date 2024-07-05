@@ -1,0 +1,5 @@
+variable "userdb" {
+}
+
+variable "passdb" {
+}
